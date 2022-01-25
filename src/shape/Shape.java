@@ -1,4 +1,4 @@
-package shape;
+ï»¿package shape;
 
 abstract public class Shape {
 	private int i;
@@ -12,5 +12,5 @@ abstract public class Shape {
 	protected void setI(int i) {
 		this.i = i;
 	}
-	abstract public double getArea(); // ³ĞÀÌ
+	abstract public double getArea(); // ë„“ì´
 }

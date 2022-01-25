@@ -1,4 +1,4 @@
-package shape1;
+ï»¿package shape1;
 
 import circle.Circle;
 import cylinder.Cylinder;
@@ -8,19 +8,19 @@ import shape.D3;
 import shape.Shape;
 import tri.Tri;
 
-// shape : µµÇü
-// ÇÏÀ§ Å¬·¡½º Á¦ÀÛ(2Â÷¿ø µµÇü, 3Â÷¿ø µµÇü)
-// 2Â÷¿øµµÇü : ¿ø, »ç°¢Çü, Á÷°¢»ï°¢Çü >> µÑ·¹, ³ĞÀÌ°ª °è»ê 
-// ¿ø : r
-// »ç°¢Çü : x, y
-// Á÷°¢»ï°¢Çü : x, y
+// shape : ë„í˜•
+// í•˜ìœ„ í´ë˜ìŠ¤ ì œì‘(2ì°¨ì› ë„í˜•, 3ì°¨ì› ë„í˜•)
+// 2ì°¨ì›ë„í˜• : ì›, ì‚¬ê°í˜•, ì§ê°ì‚¼ê°í˜• >> ë‘˜ë ˆ, ë„“ì´ê°’ ê³„ì‚° 
+// ì› : r
+// ì‚¬ê°í˜• : x, y
+// ì§ê°ì‚¼ê°í˜• : x, y
 
-// 3Â÷¿øµµÇü : ¿ø±âµÕ, À°¸éÃ¼, »ï°¢±âµÕ >> °Ñ³ĞÀÌ, ºÎÇÇ °è»ê
+// 3ì°¨ì›ë„í˜• : ì›ê¸°ë‘¥, ìœ¡ë©´ì²´, ì‚¼ê°ê¸°ë‘¥ >> ê²‰ë„“ì´, ë¶€í”¼ ê³„ì‚°
 
 // Shape[] shapes = new Shape[6];
 // shapes[0] = new Circle(5);
 
-// Ãß»óÅ¬·¡½º, ÀÎÅÍÆäÀÌ½º¸¦ ÀûÀıÈ÷ È°¿ëÇØ Á¦ÀÛ
+// ì¶”ìƒí´ë˜ìŠ¤, ì¸í„°í˜ì´ìŠ¤ë¥¼ ì ì ˆíˆ í™œìš©í•´ ì œì‘
 public class ShapeTest {
 	public static void main(String[] args) {
 		Shape[] shapes = new Shape[4];
@@ -30,12 +30,12 @@ public class ShapeTest {
 		shapes[3] = new Prizm(3, 4, 5);
 		
 		for(Shape s : shapes) {
-			System.out.println(s.getClass().getSimpleName() + "ÀÇ ³ĞÀÌ´Â " + s.getArea());
+			System.out.println(s.getClass().getSimpleName() + "ì˜ ë„“ì´ëŠ” " + s.getArea());
 			if(s instanceof D2) {
-				System.out.println(s.getClass().getSimpleName() + "ÀÇ µÑ·¹´Â " + ((D2)s).getCircum());
+				System.out.println(s.getClass().getSimpleName() + "ì˜ ë‘˜ë ˆëŠ” " + ((D2)s).getCircum());
 			}
 			if(s instanceof D3) {
-				System.out.println(s.getClass().getSimpleName() + "ÀÇ ºÎÇÇ´Â " + ((D3)s).getVolumn());
+				System.out.println(s.getClass().getSimpleName() + "ì˜ ë¶€í”¼ëŠ” " + ((D3)s).getVolumn());
 			}
 		}
 	}
